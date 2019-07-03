@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div th:each="public : ${publicacao}">
+            <img src="#" th:attr="src=@{${public.foto}}" >
+            <h3 th:text="${public.nome}"></h3>
+            <p th:text="${public.idade}"></p>
+            <p th:text="${public.estadoCivil}"></p>
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>
